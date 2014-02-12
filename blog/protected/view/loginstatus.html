@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>User Login</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="Shortcut Icon" href="http://doophp.com/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="{{rootUrl}}global/css/style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="{{rootUrl}}global/css/demo.css" media="screen" />
+
+
+</head>
+<body>
+
+<div id="wrap">
+
+<!-- include 'top' -->
+
+<div id="content">
+        <h1>UserManager :: {{pagetitle}}</h1>
+        <br /><br />
+<h2>
+Logged in as :: {{username}}
+</h2><br /><br />
+
+        <p>
+            Not {{username}}?
+            <a href="{{app_url}}logout/">Logout!</a>
+        </p>
+
+        <p>
+		            Remove User?
+		            <a href="{{app_url}}removeUser/">Delete User {{username}}</a>
+        </p>
+        <div style="clear: both;"> </div>
+		</div>
+
+		<div id="bottom"> </div>
+
+		    <div id="footer">
+		        Powered by <a href="http://www.doophp.com/">DooPHP framework</a>, for educational purpose.
+		    </div>
+		</div>
+
+		</body>
+</html>
